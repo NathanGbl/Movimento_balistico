@@ -17,12 +17,16 @@ while opcao != 0:
                 print(f"Vy: {vy()}")
             elif opcao3 == 2:
                 print(f"Vy: {vy2()}")
+            elif opcao3 == 3:
+                print(f"Vy: {vy3()}")
+            elif opcao3 == 4:
+                print(f"Vy: 0")
     elif opcao == 3:
         print(f"Distância: {dist_proj_orig()}")
     elif opcao == 4:
         print(f"Módulo da velocidade: {v()}")
     elif opcao == 5:
-        print(f"Tempo de subida: {tempo_sub}s")
+        print(f"Tempo de subida: {tempo_sub()}s")
     elif opcao == 6:
         print(f"Equação da trajetória: {eq_traj()}")
     elif opcao == 7:
