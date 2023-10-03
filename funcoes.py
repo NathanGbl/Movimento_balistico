@@ -49,12 +49,6 @@ def vy():
     angulo = float(input("Valor do ângulo: "))
     return v*sin(radians(angulo))
 
-def vy2():
-    v0 = float(input("Valor de V0: "))
-    t = float(input("Valor de t: "))
-    angulo = float(input("Valor do ângulo(em graus): "))
-    return (v0 * sin(radians(angulo))) - (10*t)
-
 def tg():
     vx = float(input("Valor de vx: "))
     vy = float(input("Valor de vy: "))
