@@ -27,16 +27,17 @@ def menu_2():
 '''mov horizontal'''
 def mov_horizontal():
     x0 = float(input("Valor de x0: "))
-    v0 = float(input("Valor de v0: "))
+    v0x = float(input("Valor de v0x: "))
     t = float(input("Valor de t: "))
-    return x0 + v0*t
+    return x0 + v0x*t
 
 '''mov vertical'''
 def mov_vertical():
     y0 = float(input("Valor de y0: "))
     v0y = float(input("Valor de v0y: "))
     t = float(input("Valor de t: "))
-    return y0 + v0y*t (-5*pow(t,2))
+    print(t)
+    return y0 + v0y*t - (5*(pow(t,2)))
 
 def vx():
     v = float(input("Valor de v: "))
@@ -47,6 +48,12 @@ def vy():
     v = float(input("Valor de v: "))
     angulo = float(input("Valor do ângulo: "))
     return v*sin(radians(angulo))
+
+def vy2():
+    v0 = float(input("Valor de V0: "))
+    t = float(input("Valor de t: "))
+    angulo = float(input("Valor do ângulo(em graus): "))
+    return (v0 * sin(radians(angulo))) - (10*t)
 
 def tg():
     vx = float(input("Valor de vx: "))
@@ -94,5 +101,5 @@ def temp_alc():
 def alcance():
     v0 = float(input("Valor de v0: "))
     angulo = float(input("Valor do ângulo(em graus): "))
-    return (pow(v0,2) * sin(2*radians(angulo))/10)
+    return (pow(v0,2) * sin(2*radians(angulo))) / 10
 
