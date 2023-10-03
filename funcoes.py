@@ -24,6 +24,12 @@ def menu_2():
     opcao = int(input("Opção: "))
     return opcao
 
+def menu_3():
+    print("Se tiver v e ângulo, escolha 1")
+    print("Se tiver v0, ângulo de v0 e t, escolha 2")
+    opcao = int(input("Opção: "))
+    return opcao
+
 '''mov horizontal'''
 def mov_horizontal():
     x0 = float(input("Valor de x0: "))
@@ -48,6 +54,12 @@ def vy():
     v = float(input("Valor de v: "))
     angulo = float(input("Valor do ângulo: "))
     return v*sin(radians(angulo))
+
+def vy2():
+    v0 = float(input("Valor de v0: "))
+    angulov0 = float(input("Valor do ângulo de v0 (em graus): "))
+    t = float(input("Valor de t: "))
+    return (v0 * sin(radians(angulov0))) - (9.8 * t)
 
 def tg():
     vx = float(input("Valor de vx: "))

@@ -12,7 +12,11 @@ while opcao != 0:
         elif opcao2 == 2:
             print(f"Vx: {vx()}")
         elif opcao2 == 3:
-            print(f"Vy: {vy()}")
+            opcao3 = menu_3()
+            if opcao3 == 1:
+                print(f"Vy: {vy()}")
+            elif opcao3 == 2:
+                print(f"Vy: {vy2()}")
     elif opcao == 3:
         print(f"Distância: {dist_proj_orig()}")
     elif opcao == 4:
